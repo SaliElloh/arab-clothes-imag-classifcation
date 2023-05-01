@@ -1,5 +1,7 @@
 # arab-clothes-image-classifcation
 This project expands on the TensorFlow tutorial "Basic classification: Classify images of clothing" by training the model to recognize three new labels that represent Muslim/Arab clothing.
+-->
+
 <!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
 <a name="readme-top"></a>
 <!--
@@ -39,7 +41,7 @@ This project expands on the TensorFlow tutorial "Basic classification: Classify 
   <h3 align="center">Best-README-Template</h3>
 
   <p align="center">
-    An awesome README template to jumpstart your projects!
+    A brief Read.me introducing the project and its contents
     <br />
     <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
     <br />
@@ -73,8 +75,6 @@ This project expands on the TensorFlow tutorial "Basic classification: Classify 
     </li>
     <li><a href="#usage">Usage</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
@@ -87,36 +87,55 @@ This project expands on the TensorFlow tutorial "Basic classification: Classify 
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-There are many great README templates available on GitHub; however, I didn't find one that really suited my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
+The "Basic classification" Clasify images of clothing" Tensorflow tutorial train a neural network model to classify images of clothing, like sneaker and shirts. The guide uses the Fashion MNIST dataset which contains 70,000 grayscale images in 10 categories.
 
-Here's why:
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
-* You shouldn't be doing the same tasks over and over like creating a README from scratch
-* You should implement DRY principles to the rest of your life :smile:
+For this project, I create a new dataset that includes additional labels not present in the current algorithm. Specifically, I add three labels - abaya, thobe, and hijab - which are types of clothing commonly associated with Islamic and Arabic cultures.
 
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have contributed to expanding this template!
+After generating the new dataset with the additional labels, I retrained the model using this updated data. I then evaluated the performance of the retrained model to assess its accuracy and effectiveness in classifying the new labels.
+
 
 Use the `BLANK_README.md` to get started.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-
 ### Built With
 
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
+The frameworks and libraries used within this project are:
 
-* [![Next][Next.js]][Next-url]
-* [![React][React.js]][React-url]
-* [![Vue][Vue.js]][Vue-url]
-* [![Angular][Angular.io]][Angular-url]
-* [![Svelte][Svelte.dev]][Svelte-url]
-* [![Laravel][Laravel.com]][Laravel-url]
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-* [![JQuery][JQuery.com]][JQuery-url]
+* [![TensorFlow][Tensorflow.js]][Tensorflow-url]
+* [![Keras][Keras.js]][Keras-url]
+* [![NumPy][NumPy.js]][NumPy-url]
+* [![Matplotlib][Matplotlib.js]][Matplotlib-url]
+* [![Google Colab][GoogleColab.js][GoogleColab-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+### Dataset
+
+The Fashion MNIST and is split into a training set of 60,000 images and a test set of 10,000 images.
+
+The 10 different clothing item classes in it are:
+1. T-shirt/top
+2. Trouser
+3. Pullover
+4. Dress
+5. Coat
+6. Sandal
+7. Shirt
+8. Sneaker
+9. Bag
+10. Ankle boot
+
+And each class has an equal number of examples, or images, for better training 
+
+The 3 added clothing item classes in it are:
+
+11. Abaya
+12. Thobe
+13. Hijab
+
+Due to limited resources, only a 100 images of each class were collected. The images were collected from google, in .PNG format, then later converted in the code to fit the image format found in the fashion MNIST dataset.
 
 
 <!-- GETTING STARTED -->
@@ -127,17 +146,27 @@ To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
+
+If using Google colab to test the project, you need:
+
+1. a Google colab account
+2. Access to a GPU
+3. Internet/Wi-Fi
+
+If you plan on running it on python, you need to install on your computer the following:
+
+1. Python
+2. pip 
+3. PyCharm 
+4. Tensorflow, Keras, NumPy, Matplotlib
+
 
 ### Installation
 
-_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
+After installing everything mentioned earlier to run the project you need to:
 
-1. Get a free API Key at [https://example.com](https://example.com)
+edit this
+1. 
 2. Clone the repo
    ```sh
    git clone https://github.com/your_username_/Project-Name.git
@@ -255,18 +284,16 @@ Use this space to list resources you find helpful and would like to give credit 
 [linkedin-url]: https://linkedin.com/in/othneildrew
 [product-screenshot]: images/screenshot.png
 [Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
-[Next-url]: https://nextjs.org/
-[React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
-[React-url]: https://reactjs.org/
-[Vue.js]: https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D
-[Vue-url]: https://vuejs.org/
-[Angular.io]: https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white
-[Angular-url]: https://angular.io/
-[Svelte.dev]: https://img.shields.io/badge/Svelte-4A4A55?style=for-the-badge&logo=svelte&logoColor=FF3E00
 [Svelte-url]: https://svelte.dev/
-[Laravel.com]: https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white
-[Laravel-url]: https://laravel.com
-[Bootstrap.com]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
-[Bootstrap-url]: https://getbootstrap.com
 [JQuery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
 [JQuery-url]: https://jquery.com 
+[Tensorflow.js]: https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white
+[Tensorflow-url]: https://www.tensorflow.org/
+[Keras.js]: https://img.shields.io/badge/Keras-D00000?style=for-the-badge&logo=keras&logoColor=white
+[Keras-url]: https://keras.io/
+[NumPy.js]: https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white
+[NumPy-url]: https://numpy.org/
+[Matplotlib.js]: https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black
+[Matplotlib-url]: https://matplotlib.org/
+[GoogleColab.js]: https://img.shields.io/badge/Open%20In-Colab-yellowgreen?style=for-the-badge&logo=googlecolab
+[GoogleColab-url]: https://colab.research.google.com/
