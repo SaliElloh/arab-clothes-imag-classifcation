@@ -98,7 +98,7 @@ If you plan on running it on python, you need to install on your computer the fo
 
 ### Steps to run the code:
 
-1. Open the following google drive link where you can access all the files for the project, such as the original images, oral live presentation, and the "arab-clothes-image-classification.ipynb" colab notebook.
+1. Open the following google drive link where you can access all the files for the project, such as the original images and the "arab-clothes-image-classification.ipynb" colab notebook.
 
 google drive link: https://drive.google.com/drive/folders/1PVoEKWw9CZA9c138N9SMYqJP9WvL-T1K?usp=share_link
 
