@@ -1,26 +1,14 @@
 # arab-clothes-image-classifcation
 This project expands on the TensorFlow tutorial "Basic classification: Classify images of clothing" by training the model to recognize three new labels that represent Muslim/Arab clothing.
 
+For more information about me, please visit my LinkedIn:
+
+[![LinkedIn][LinkedIn.js]][LinkedIn-url]
 
 
-
-
-
-[![LinkedIn][linkedin-shield]][linkedin-url]
-
-
-
-<!-- PROJECT LOGO -->
 <div align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
-  </a>
-
   <h3 align="center">A brief Read.me introducing the project and its contents</h3>
-    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
     <br />
-    <br />
-  
   </p>
 </div>
 
@@ -32,7 +20,9 @@ This project expands on the TensorFlow tutorial "Basic classification: Classify 
     <li>
       <a href="#about-the-project">About The Project</a>
       <ul>
+        <li><a href="#What-are-Hijabs,-Abayas,-and-Thobes? ">What are Hijabs, Abayas, and Thobes? </a></li>
         <li><a href="#built-with">Built With</a></li>
+        <li><a href="#Dataset">Dataset</a></li>
       </ul>
     </li>
     <li>
@@ -54,18 +44,24 @@ This project expands on the TensorFlow tutorial "Basic classification: Classify 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+The "Basic classification" Clasify images of clothing" Tensorflow tutorial trains a neural network model to classify images of clothing, like sneaker and shirts. The guide uses the Fashion MNIST dataset which contains 70,000 grayscale images in 10 categories.
 
-The "Basic classification" Clasify images of clothing" Tensorflow tutorial train a neural network model to classify images of clothing, like sneaker and shirts. The guide uses the Fashion MNIST dataset which contains 70,000 grayscale images in 10 categories.
+For this project, I've create a new dataset that includes additional labels not present in the current algorithm. Specifically, I've added three labels - abaya, thobe, and hijab - which are types of clothing commonly associated with Islamic and Arabic cultures.
 
-For this project, I create a new dataset that includes additional labels not present in the current algorithm. Specifically, I add three labels - abaya, thobe, and hijab - which are types of clothing commonly associated with Islamic and Arabic cultures.
+After generating the new dataset with the additional labels, I've retrained the model using this updated data. I then evaluated the performance of the retrained model to assess its accuracy and effectiveness in classifying the new labels.
 
-After generating the new dataset with the additional labels, I retrained the model using this updated data. I then evaluated the performance of the retrained model to assess its accuracy and effectiveness in classifying the new labels.
+### What are Hijabs, Abayas, and Thobes? 
+
+Hijab generally refers to headcoverings worn by some Muslim women. It is similar to the wimple, apostolnik, and mantilla worn by some Christian women.
+
+The abaya is a simple, loose over-garment, essentially a robe-like dress, worn by some women in parts of the Muslim world including North Africa, the Arabian Peninsula, and most of the Middle East.
+
+The Thobe, also written as "Thawb", is an ankle-length robe, usually with long sleeves. It is commonly worn in the Arabian Peninsula, the Middle East, North Africa, and other neighbouring Arab countries, and some countries in East and West Africa.
+
+Heres a demonstration of each clothing garment, along with their classification:
+![image](https://user-images.githubusercontent.com/112829375/235896519-90dc82e1-8552-4081-9eed-20241fad5ff0.png)
 
 
-Use the `BLANK_README.md` to get started.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 ### Built With
@@ -78,12 +74,12 @@ The frameworks and libraries used within this project are:
 * [![Matplotlib][Matplotlib.js]][Matplotlib-url]
 * [![Open In Colab](https://img.shields.io/badge/Open%20In-Colab-yellowgreen?style=for-the-badge&logo=googlecolab)](https://colab.research.google.com/)
 
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<!-- Dataset -->
 ### Dataset
 
-The Fashion MNIST and is split into a training set of 60,000 images and a test set of 10,000 images.
+The Fashion MNIST is split into a training set of 60,000 images and a test set of 10,000 images.
 
 The 10 different clothing item classes in it are:
 1. T-shirt/top
@@ -97,16 +93,15 @@ The 10 different clothing item classes in it are:
 9. Bag
 10. Ankle boot
 
-And each class has an equal number of examples, or images, for better training 
-
-The 3 added clothing item classes in it are:
+The 3 clothing item classes that I've added are:
 
 11. Abaya
 12. Thobe
 13. Hijab
 
-Due to limited resources, only a 100 images of each class were collected. The images were collected from google, in .PNG format, then later converted in the code to fit the image format found in the fashion MNIST dataset.
+Due to limited resources, only a 100 images of each class were collected. The images were collected from google, in .PNG format, then later converted in the code to fit the image format found in the fashion MNIST dataset. 
 
+This includes preprocessing the data to be a 28x28 pixels, converting the images to greyscale, and normalizing the pixel values to be between 0 and 1.
 
 <!-- GETTING STARTED -->
 ## Getting Started
@@ -114,7 +109,6 @@ Due to limited resources, only a 100 images of each class were collected. The im
 To get the project running, there's a couple of programs and steps needed. here are the steps: 
 
 ### Prerequisites
-
 
 If using Google colab to test the project, you need:
 
@@ -130,61 +124,31 @@ If you plan on running it on python, you need to install on your computer the fo
 4. Tensorflow, Keras, NumPy, Matplotlib
 
 
-### Installation
+### Steps to run the code:
 
-If using Google colab, here are the steps you need to take:
+1. Open the following google drive link where you can access all the files for the project, such as the original images, oral live presentation, and the "arab-clothes-image-classification.ipynb" colab notebook.
 
+google drive link: https://drive.google.com/drive/folders/1PVoEKWw9CZA9c138N9SMYqJP9WvL-T1K?usp=share_link
 
+2. download the "arab-clothes-image-classification.ipynb" notebook.
+3. Make sure the correct google drive is mounted
+4. run the "arab-clothes-image-classification.ipynb" notebook
 
+if you prefer to run the code on your own, without accessing the google drive link provided earlier, simply download the attached files in this repository, and create your own google drive file with all the files uploaded into it.
+   
 
-edit this
-1. 
-2. Clone the repo
-   ```sh
-   git clone https://github.com/your_username_/Project-Name.git
-   ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
+<!-- NEW LABELS IMAGE EXAMPLES -->
+## Image examples
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+Here is a snapshot of how the images for the new labels, after they've been preprocessed, look like:
 
+![image](https://user-images.githubusercontent.com/112829375/235897301-c6795324-af8c-4a87-a9ea-fc7425dda553.png)
 
+![image](https://user-images.githubusercontent.com/112829375/235897529-89753437-1842-477f-b3a4-319e2e482a8c.png)
 
-<!-- USAGE EXAMPLES -->
-## Usage
-
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
+![image](https://user-images.githubusercontent.com/112829375/235896781-38f344dc-1cea-4d6f-8505-53e09542459f.png)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-
-<!-- CONTRIBUTING -->
-## Contributing
-
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star! Thanks again!
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 
 <!-- LICENSE -->
 ## License
@@ -193,55 +157,27 @@ No License used.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
 <!-- CONTACT -->
 ## Contact
 
 Sali E-loh - [@Sali El-loh](https://www.linkedin.com/in/salielloh12/) - ellohsali@gmail.com
 
-Project Colab Link: (https://drive.google.com/drive/folders/1XSlsOPefnSarbKSq-sWGuVBdl0bfeCSS?usp=share_link)
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
+This project was inspired by the TensorFlow, "Basic classification: Classify images of clothing" tutorial.
 
-* [Choose an Open Source License](https://choosealicense.com)
-* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
-* [Malven's Flexbox Cheatsheet](https://flexbox.malven.co/)
-* [Malven's Grid Cheatsheet](https://grid.malven.co/)
-* [Img Shields](https://shields.io)
-* [GitHub Pages](https://pages.github.com)
-* [Font Awesome](https://fontawesome.com)
-* [React Icons](https://react-icons.github.io/react-icons/search)
+* [TensoFlow: Clothes Image Classification Tutorial](https://www.tensorflow.org/tutorials/keras/classification)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
-[contributors-url]: https://github.com/othneildrew/Best-README-Template/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=for-the-badge
-[forks-url]: https://github.com/othneildrew/Best-README-Template/network/members
-[stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=for-the-badge
-[stars-url]: https://github.com/othneildrew/Best-README-Template/stargazers
-[issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
-[issues-url]: https://github.com/othneildrew/Best-README-Template/issues
-[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
-[license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://www.linkedin.com/in/salielloh12/
-[product-screenshot]: images/screenshot.png
-[Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
-[Svelte-url]: https://svelte.dev/
-[JQuery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
-[JQuery-url]: https://jquery.com 
+[LinkedIn.js]: https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white
+[LinkedIn-url]: https://www.linkedin.com/in/salielloh12/
 [Tensorflow.js]: https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white
 [Tensorflow-url]: https://www.tensorflow.org/
 [Keras.js]: https://img.shields.io/badge/Keras-D00000?style=for-the-badge&logo=keras&logoColor=white
@@ -250,7 +186,4 @@ Use this space to list resources you find helpful and would like to give credit 
 [NumPy-url]: https://numpy.org/
 [Matplotlib.js]: https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black
 [Matplotlib-url]: https://matplotlib.org/
-[GoogleColab.js]: https://img.shields.io/badge/Open%20In-Colab-yellowgreen?style=for-the-badge&logo=googlecolab
-[GoogleColab-url]: https://colab.research.google.com/
- [![Open In Colab](https://img.shields.io/badge/Open%20In-Colab-yellowgreen?style=for-the-badge&logo=googlecolab)](https://colab.research.google.com/)
 
