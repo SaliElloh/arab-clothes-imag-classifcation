@@ -13,33 +13,6 @@ For more information about me, please visit my LinkedIn:
 </div>
 
 
-<!-- TABLE OF CONTENTS -->
-<details>
-  <summary>Table of Contents</summary>
-  <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#What-are-Hijabs,-Abayas,-and-Thobes? ">What are Hijabs, Abayas, and Thobes? </a></li>
-        <li><a href="#built-with">Built With</a></li>
-        <li><a href="#Dataset">Dataset</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
-  </ol>
-</details>
-
-
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
@@ -74,7 +47,6 @@ The frameworks and libraries used within this project are:
 * [![Matplotlib][Matplotlib.js]][Matplotlib-url]
 * [![Open In Colab](https://img.shields.io/badge/Open%20In-Colab-yellowgreen?style=for-the-badge&logo=googlecolab)](https://colab.research.google.com/)
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- Dataset -->
 ### Dataset
@@ -148,21 +120,15 @@ Here is a snapshot of how the images for the new labels, after they've been prep
 
 ![image](https://user-images.githubusercontent.com/112829375/235896781-38f344dc-1cea-4d6f-8505-53e09542459f.png)
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 <!-- LICENSE -->
 ## License
 
 No License used.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 <!-- CONTACT -->
 ## Contact
 
 Sali E-loh - [@Sali El-loh](https://www.linkedin.com/in/salielloh12/) - ellohsali@gmail.com
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 <!-- ACKNOWLEDGMENTS -->
@@ -171,8 +137,6 @@ Sali E-loh - [@Sali El-loh](https://www.linkedin.com/in/salielloh12/) - ellohsal
 This project was inspired by the TensorFlow, "Basic classification: Classify images of clothing" tutorial.
 
 * [TensoFlow: Clothes Image Classification Tutorial](https://www.tensorflow.org/tutorials/keras/classification)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
